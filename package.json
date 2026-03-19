@@ -3,13 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "@ai-sdk/anthropic": "^1.2.11",
+    "@ai-sdk/openai": "^1.2.11",
     "@browserbasehq/sdk": "^2.0.0",
     "@browserbasehq/stagehand": "^2.2.1",
     "@vercel/analytics": "^1.4.1",

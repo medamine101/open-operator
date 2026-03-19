@@ -1,10 +1,12 @@
 import { NextResponse } from "next/server";
-import { anthropic } from "@ai-sdk/anthropic";
+// import { anthropic } from "@ai-sdk/anthropic";
+import { openai } from "@ai-sdk/openai";
 import { CoreMessage, generateObject, LanguageModelV1, UserContent } from "ai";
 import { z } from "zod";
 import { ObserveResult, Stagehand } from "@browserbasehq/stagehand";
 
-const LLMClient = anthropic("claude-3-7-sonnet-latest");
+// const LLMClient = anthropic("claude-3-7-sonnet-latest");
+const LLMClient = openai("gpt-4o");
 
 const BANNED_URLS = [
   "gemini.browserbase.com",
